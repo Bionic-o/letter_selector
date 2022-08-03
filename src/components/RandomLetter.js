@@ -33,13 +33,14 @@ function RandomLetter () {
     useEffect (() => {
         setLetters(LettersArray)
     }, [])
-    //console.log(letters)
-    let oneLetter = LettersArray[Math.floor(Math.random()*LettersArray.length)];
-    //console.log(oneLetter)
+    let randomIndex = [Math.floor(Math.random()*LettersArray.length)];
+    let oneLetter = LettersArray[randomIndex].letter
+    console.log(oneLetter)
+    
     
     return (
         <div>
-            {oneLetter.letter}
+            {oneLetter}
         </div>
     )
 }
