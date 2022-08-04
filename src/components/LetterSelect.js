@@ -6,8 +6,7 @@ function LetterSelect () {
     const location = useLocation();
     const userName = location.state?.username
     const [isToggled, setIsToggled] = useState(false)
-
-    console.log(isToggled.toString())
+    //console.log(isToggled.toString())
 
     
 
