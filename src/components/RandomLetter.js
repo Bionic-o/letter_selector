@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 function RandomLetter () {
-    const [allLetters, setAllLetters] = useState("Text")
+    const [allLetters, setAllLetters] = useState("")
     const lettersArray = [
         {id: 1, letter: "A"},
         {id: 2, letter: "B"},
@@ -32,15 +32,20 @@ function RandomLetter () {
     ]
     //console.log(lettersArray)
     const getAllLetters = lettersArray.map((letterObj) => {return (letterObj.letter)})
-    console.log(getAllLetters)
+    //console.log(getAllLetters)
     useEffect (() => {
         setAllLetters(getAllLetters)
     }, [])
-    console.log(allLetters)
+    //console.log(allLetters[7])
+    let randomIndex = [Math.floor(Math.random()*allLetters.length)];
+    let oneLetter = allLetters[randomIndex]
+    console.log(oneLetter)
+
+    
 
     return (
         <div>
-            test
+            {oneLetter}
         </div>
     )
 }
