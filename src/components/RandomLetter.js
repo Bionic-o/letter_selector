@@ -45,7 +45,7 @@ function RandomLetter ({isToggled}) {
     useEffect(() => {
         const interval = setInterval(() => {
             setAllLetters((prevLetter) => prevLetter + oneLetter())
-        }, 50);
+        }, 5000);
         return() => clearInterval(interval);
     }, [allLetters])
     console.log(allLetters)
