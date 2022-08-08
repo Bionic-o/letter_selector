@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-function RandomLetter () {
+function RandomLetter ({isToggled}) {
     const lettersArray = [
         {id: 1, letter: "A"},
         {id: 2, letter: "B"},
@@ -31,8 +31,6 @@ function RandomLetter () {
     ]
     const getAllLetters = lettersArray.map((letterObj) => {return (letterObj.letter)})
     const stringLetters = getAllLetters.toString()
-    // console.log(getAllLetters.toString())
-
     const [allLetters, setAllLetters] = useState(stringLetters.replaceAll(',', ''))
 
     /* the useState needs an original value of the whole alphabet,
@@ -51,13 +49,14 @@ function RandomLetter () {
         return() => clearInterval(interval);
     }, [allLetters])
     console.log(allLetters)
-    
+    console.log(isToggled)
 
     return (
         <div>
             {oneLetter()}
             <hr></hr>
             {allLetters[randomIndex]} 
+            {!isToggled && "A"}
         </div>
     )
 }

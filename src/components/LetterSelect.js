@@ -17,8 +17,7 @@ function LetterSelect () {
             <div>
                 <button onClick={() => setIsToggled(!isToggled)}>{!isToggled ? "START" : "STOP"}</button>
             </div>
-            {isToggled && <RandomLetter />}
-            {!isToggled && "A"}
+            {isToggled && <RandomLetter isToggled={isToggled}/>}
         </div>
     )
 }
