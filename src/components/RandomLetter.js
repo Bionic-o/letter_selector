@@ -40,7 +40,7 @@ function RandomLetter ({isToggled}) {
 
     let randomIndex = [Math.floor(Math.random()*getAllLetters.length)];
     let oneLetter = () => getAllLetters[randomIndex]
-    //console.log(oneLetter())
+    console.log(oneLetter())
 
     useEffect(() => {
         const interval = setInterval(() => {
