@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.31d6cfe0.css",
-    "main.js": "./static/js/main.5d9979b2.js",
-    "index.html": "./index.html",
-    "main.5d9979b2.js.map": "./static/js/main.5d9979b2.js.map"
+    "main.css": "/letter_selector/static/css/main.31d6cfe0.css",
+    "main.js": "/letter_selector/static/js/main.5d9979b2.js",
+    "index.html": "/letter_selector/index.html",
+    "main.5d9979b2.js.map": "/letter_selector/static/js/main.5d9979b2.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
