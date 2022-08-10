@@ -16,8 +16,8 @@ function LetterSelect () {
     so it can render a single random letter right from the start. 
     if the default value is "", it will render single random Letters only,
     when they were "added" to the useState the second time */
-    
     let randomIndex = [Math.floor(Math.random()*lettersArray.length)];
+
 
 
     // ********** Code below was used from the Internet, could not get Interval and useEffect working how I wanted **********
@@ -41,7 +41,10 @@ function LetterSelect () {
         setFlag(true);
         return () => clearInterval(myInterval.current)
     }, [])
-    // ********** Code below was used from the Internet, could not get Interval and useEffect working how I wanted **********
+    // ********** Code above was used from the Internet, could not get Interval and useEffect working how I wanted **********
+    // https://stackoverflow.com/questions/71938830/clearinterval-not-working-in-react-application-using-functional-component
+
+
 
    console.log(allLetters)
     return (
