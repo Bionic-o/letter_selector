@@ -18,7 +18,7 @@ function RandomLetter ({lettersArray}) {
     useEffect(() => {
         const interval = setInterval(() => {
             setAllLetters((prevLetter) => prevLetter + oneLetter())
-        }, 600);
+        }, 250);
         return() => clearInterval(interval);
     }, [oneLetter])
     console.log(allLetters)

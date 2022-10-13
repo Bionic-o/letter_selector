@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom"
 import { useEffect, useState, useRef } from "react"
-import Counter from "./test";
+//import Counter from "./test";
 
 function LetterSelect () {
     const location = useLocation();
@@ -28,15 +28,15 @@ function LetterSelect () {
         setFlag(!flag);
         if (flag) {
             myInterval.current = setInterval(() => setAllLetters((prevLetter) => prevLetter + 1), /* "+1" can be anything. array changes but render is correct. no idea how to solve */
-            100);
+            50);
         } else {
             clearInterval(myInterval.current)
         }
     }
-    function resetLetter() {
+    /* function resetLetter() {
         clearInterval(myInterval.current);
         setAllLetters(stringLetters.replaceAll(',', ''))
-    }
+    } */
     useEffect(() => {
         setFlag(true);
         return () => clearInterval(myInterval.current)
@@ -48,15 +48,15 @@ function LetterSelect () {
 
    console.log(allLetters)
     return (
-        <div>
-            <h1>Hallo {userName}!</h1>
-            <p>Lass uns starten</p>
+        <div className="letterPage">
+            <h1 className="hallo">Hallo {userName}!</h1>
+            <p className="text">Lass uns starten</p>
             <div>
-                <button onClick={intervalLetter}>{flag ? "START" : "STOP"}</button>
-                <button onClick={resetLetter}>Reset</button>
+                <button className="start" onClick={intervalLetter}>{flag ? "START" : "STOP"}</button>
+                {/* <button onClick={resetLetter}>Reset</button> */}
             </div>
-            {allLetters[randomIndex]}
-            <Counter />
+            <p className="letter">{allLetters[randomIndex]}</p>
+            {/* <Counter /> */}
         </div>
     )
 }

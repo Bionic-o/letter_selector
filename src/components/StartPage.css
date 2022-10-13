@@ -1,0 +1,80 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    text-align: center;
+    margin: 2rem;
+}
+
+.styleButtons {
+    margin-bottom: 8rem;
+    margin-top: 3rem;
+}
+
+.style1 {
+    width: 80px;
+    height: 33px;
+    border-radius: 50%;
+}
+.style2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 80px;
+    height: 33px;
+    border-radius: 50%;
+}
+.style3 {
+    width: 80px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.welcome {
+    
+}
+.name {
+    margin-bottom: 2rem;
+}
+.input {
+    width: 100px;
+    margin-right: 10px;
+}
+.button {
+    width: 100px;
+    margin-left: 10px;
+}
+.footer {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    margin-top: 15rem;
+}
+
+
+.letterPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hallo {
+    margin-top: 4rem;
+}
+.text {
+    margin-bottom: 6rem;
+}
+.start {
+    margin-bottom: 4rem;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.letter {
+    font-size: larger;
+    font-weight: bolder;
+}
