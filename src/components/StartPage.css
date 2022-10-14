@@ -1,16 +1,17 @@
 body {
     width: 100%;
     height: 100%;
+    margin: 0px;
 }
 
 .app {
     text-align: center;
-    margin: 2rem;
+    padding: 2rem;
 }
 
 .styleButtons {
-    margin-bottom: 8rem;
-    margin-top: 3rem;
+    padding-bottom: 8rem;
+    padding-top: 3rem;
 }
 
 .style1 {
@@ -35,23 +36,23 @@ body {
     
 }
 .name {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 .input {
     width: 100px;
-    margin-right: 10px;
+    padding-right: 10px;
 }
 .button {
     width: 100px;
-    margin-left: 10px;
+    padding-left: 10px;
 }
 .footer {
     font-size: small;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 2rem;
-    margin-top: 15rem;
+    padding-bottom: 2rem;
+    padding-top: 15rem;
 }
 
 
@@ -63,13 +64,13 @@ body {
 }
 
 .hallo {
-    margin-top: 4rem;
+    padding-top: 4rem;
 }
 .text {
-    margin-bottom: 6rem;
+    padding-bottom: 6rem;
 }
 .start {
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
     border-radius: 50%;
     width: 100px;
     height: 100px;
