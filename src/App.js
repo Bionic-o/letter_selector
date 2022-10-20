@@ -1,7 +1,8 @@
 import LetterSelect from './components/LetterSelect';
 import StartPage from './components/StartPage';
 import { Route, Routes } from 'react-router-dom';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
+import { View } from 'react-native';
 
 function App() {
   const [redBackground, setRedBackground] = useState(false)
