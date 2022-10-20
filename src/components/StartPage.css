@@ -1,12 +1,18 @@
+html {
+    height: 100%
+}
+
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     margin: 0px;
 }
 
 .app {
     text-align: center;
     padding: 2rem;
+    height: 100vh;
+    padding-bottom:30px;
 }
 
 .styleButtons {
@@ -51,8 +57,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 2rem;
-    padding-top: 15rem;
+    margin-bottom: 2rem;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
 }
 
 
@@ -64,13 +73,13 @@ body {
 }
 
 .hallo {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 .text {
-    padding-bottom: 6rem;
+    padding-bottom: 1rem;
 }
 .start {
-    padding-bottom: 4rem;
+    text-align: center;
     border-radius: 50%;
     width: 100px;
     height: 100px;

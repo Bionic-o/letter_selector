@@ -51,7 +51,7 @@ function LetterSelect () {
         <div className="letterPage">
             <h1 className="hallo">Hallo {userName}!</h1>
             <p className="text">Lass uns starten</p>
-            <div>
+            <div className="startButton">
                 <button className="start" onClick={intervalLetter}>{flag ? "START" : "STOP"}</button>
                 {/* <button onClick={resetLetter}>Reset</button> */}
             </div>
