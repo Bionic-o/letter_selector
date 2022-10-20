@@ -10,24 +10,25 @@ function App() {
   const [buttonColor, setButtonColor] = useState(false)
   //const [changeSwitch, setChangeSwitch] = useState(false)
   const [backgroundColor, setBackgroundColor] = useState("")
+  const [fontColor, setFontColor] = useState("black")
   //console.log(userName)
 
 
   useEffect(() => {
     if (redBackground === false && blueBackground === false && yellowBackground === false) {
-      setBackgroundColor('#ff2800')
+      setBackgroundColor('#800000')
       return 
     }
   }, [])
   useEffect(() => {
     if (yellowBackground === true) {
-      setButtonColor('#ffda40')
+      setButtonColor('#ffd700')
     } 
     if (blueBackground === true) {
       setButtonColor('#003366')
     }
     if (redBackground === true) {
-      setRedBackground('#ff2800')
+      setRedBackground('#990000')
     }
   }, [])
 
@@ -36,7 +37,8 @@ function App() {
       if (redBackground === false) {
           setBlueBackground(false)
           setYellowBackground(false)
-          setBackgroundColor('#ff2800')
+          setBackgroundColor('#800000')
+          setFontColor('white')
           return red
       } 
       
@@ -47,6 +49,7 @@ function App() {
           setRedBackground(false)
           setYellowBackground(false)
           setBackgroundColor('#003366')
+          setFontColor('white')
           return blue
       }
   }
@@ -55,7 +58,8 @@ function App() {
       if (yellowBackground === false) {
           setRedBackground(false)
           setBlueBackground(false)
-          setBackgroundColor('#ffda40')
+          setBackgroundColor('#eec900')
+          setFontColor('black')
           //setButtonColor('#ffda40')
           return yellow
       } 
@@ -67,7 +71,7 @@ function App() {
     console.log(buttonColor)
 
   return (
-    <div className="app" style={{backgroundColor: `${backgroundColor}`}}>
+    <div className="app" style={{backgroundColor: `${backgroundColor}`, color: `${fontColor}`}}>
       <div className="styleButtons">
           <button className="style1" onClick={onClickHandlerRed}>Style 1</button>
           <button className="style2" onClick={onClickHandlerBlue}>Style 2</button>

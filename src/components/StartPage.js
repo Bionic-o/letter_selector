@@ -35,7 +35,7 @@ function StartPage () {
 
     return (
         <div>
-            <div>
+            <div className="startPage">
                 <h3 className="welcome">Schön, dass du da bist :)</h3>
                 <h3 className="name">Wie lautet dein Name?</h3>  
                 <input className="input" type="text" value={userName} onChange={(event) => {setUserName(event.target.value)}}></input>
