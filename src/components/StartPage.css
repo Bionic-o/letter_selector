@@ -61,7 +61,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    position:absolute;
+    position: fixed;
     left:0;
     bottom:0;
     right:0;
