@@ -10,9 +10,7 @@ body {
 
 .app {
     text-align: center;
-    padding: 1rem;
     height: 100vh;
-    padding-bottom:30px;
 }
 
 .styleButtons {
@@ -63,7 +61,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 2rem;
     position:absolute;
     left:0;
     bottom:0;

@@ -17,6 +17,7 @@ function App() {
   useEffect(() => {
     if (redBackground === false && blueBackground === false && yellowBackground === false) {
       setBackgroundColor('#800000')
+      setFontColor('white')
       return 
     }
   }, [])
