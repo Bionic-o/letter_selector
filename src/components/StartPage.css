@@ -15,7 +15,7 @@ body {
 }
 
 .styleButtons {
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
     padding-top: 3rem;
 }
 
@@ -42,14 +42,15 @@ body {
     flex-direction: column;
 }
 .name {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .input {
     width: 100px;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     border-radius: 5px;
 }
 .button {
