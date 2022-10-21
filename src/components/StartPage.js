@@ -5,32 +5,17 @@ import "./StartPage.css"
 
 function StartPage () {
     const [userName, setUserName] = useState("")
-    /* const onClickHandler = () => {
-        setChangeSwitch(current=>!current)
-    } */
+    const [txt, setTxt] = useState('');
+    
 
-/*     const changeColor = (color) => {
-        if (redBackground === true) {
-            setBlueBackground(false)
-            setYellowBackground(false)
-            setBackgroundColor('#ff2800')
-            return color
-        }
-        if (blueBackground === true) {
-            setRedBackground(false)
-            setYellowBackground(false)
-            setBackgroundColor('#003366')
-            return color
-        }
-        if (yellowBackground === true) {
-            setRedBackground(false)
-            setBlueBackground(false)
-            setBackgroundColor('#ffda40')
-            return color
-        } else {
-            setBackgroundColor('ff2800')
-        }
-    } */
+    const onChangeInput  = (event) => {
+        setUserName(event.target.value)
+        const { value } = event.target;
+        const re = /^[A-Za-z]+$/;
+        if (value === "" || re.test(value)) {
+        setTxt(value);
+    } else {alert("Bitte nur Buchstaben eingeben.")}
+    }
 
 
     return (
@@ -38,7 +23,7 @@ function StartPage () {
             <div className="startPage">
                 <h3 className="welcome">Schön, dass du da bist :)</h3>
                 <h3 className="name">Wie lautet dein Name?</h3>  
-                <input className="input" type="text" value={userName} onChange={(event) => {setUserName(event.target.value)}}></input>
+                <input className="input" type="text" value={txt} onChange={onChangeInput}></input>
                 <Link to="/letterselect" state={{ username: userName}}>
                     <button className="button">Los geht's!</button>
                 </Link>
