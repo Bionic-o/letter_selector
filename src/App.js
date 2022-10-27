@@ -8,8 +8,9 @@ function App() {
   const [redBackground, setRedBackground] = useState(false)
   const [blueBackground, setBlueBackground] = useState(false)
   const [yellowBackground, setYellowBackground] = useState(false)
-  const [buttonColor, setButtonColor] = useState(false)
-  //const [changeSwitch, setChangeSwitch] = useState(false)
+  const [buttonRed, setButtonRed] = useState(false)
+  const [buttonBlue, setButtonBlue] = useState(false)
+  const [buttonYellow, setButtonYellow] = useState(false)
   const [backgroundColor, setBackgroundColor] = useState("")
   const [fontColor, setFontColor] = useState("black")
   //console.log(userName)
@@ -22,7 +23,7 @@ function App() {
       return 
     }
   }, [])
-  useEffect(() => {
+  /* useEffect(() => {
     if (yellowBackground === true) {
       setButtonColor('#ffd700')
     } 
@@ -32,7 +33,7 @@ function App() {
     if (redBackground === true) {
       setRedBackground('#990000')
     }
-  }, [])
+  }, []) */
 
   const onClickHandlerRed = (red) => {
       setRedBackground(current => !current)
@@ -41,6 +42,7 @@ function App() {
           setYellowBackground(false)
           setBackgroundColor('#800000')
           setFontColor('white')
+
           return red
       } 
       
@@ -70,14 +72,13 @@ function App() {
     console.log('Style1', redBackground)
     console.log('Style2', blueBackground)
     console.log('Style3', yellowBackground)
-    console.log(buttonColor)
 
   return (
     <div className="app" style={{backgroundColor: `${backgroundColor}`, color: `${fontColor}`}}>
       <div className="styleButtons">
-          <button className="style1" onClick={onClickHandlerRed}>Style 1</button>
-          <button className="style2" onClick={onClickHandlerBlue}>Style 2</button>
-          <button className="style3" style={{backgroundColor: `${buttonColor}`}} onClick={onClickHandlerYellow}>Style 3</button>
+          <button className="style1" style={{backgroundColor: `${buttonRed}`}} onClick={onClickHandlerRed}>Style 1</button>
+          <button className="style2" style={{backgroundColor: `${buttonBlue}`}} onClick={onClickHandlerBlue}>Style 2</button>
+          <button className="style3" style={{backgroundColor: `${buttonYellow}`}} onClick={onClickHandlerYellow}>Style 3</button>
       </div>
       <Routes>
         <Route path="/" element={<StartPage />}></Route>
